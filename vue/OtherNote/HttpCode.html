@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Http状态码详解 | 未金涛的地盘</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="rel" href="docs/.vuepress/public/favicon.ico">
+    <meta name="description" content="未金涛的地盘">
+    
+    <link rel="preload" href="/assets/css/0.styles.aa8566d2.css" as="style"><link rel="preload" href="/assets/js/app.200df4c7.js" as="script"><link rel="preload" href="/assets/js/2.05e65b60.js" as="script"><link rel="preload" href="/assets/js/25.f3119831.js" as="script"><link rel="prefetch" href="/assets/js/10.f23fa77e.js"><link rel="prefetch" href="/assets/js/11.57c32cd5.js"><link rel="prefetch" href="/assets/js/12.466d3b02.js"><link rel="prefetch" href="/assets/js/13.df564add.js"><link rel="prefetch" href="/assets/js/14.464a8630.js"><link rel="prefetch" href="/assets/js/15.2fe3a0ca.js"><link rel="prefetch" href="/assets/js/16.81b7c150.js"><link rel="prefetch" href="/assets/js/17.ebf8e60d.js"><link rel="prefetch" href="/assets/js/18.0b09ba47.js"><link rel="prefetch" href="/assets/js/19.e9d9ad30.js"><link rel="prefetch" href="/assets/js/20.f5c5c4f3.js"><link rel="prefetch" href="/assets/js/21.7d49dfaa.js"><link rel="prefetch" href="/assets/js/22.00e878ab.js"><link rel="prefetch" href="/assets/js/23.15e999d0.js"><link rel="prefetch" href="/assets/js/24.8478c2ae.js"><link rel="prefetch" href="/assets/js/26.ee7efaa5.js"><link rel="prefetch" href="/assets/js/27.731ed13c.js"><link rel="prefetch" href="/assets/js/28.33e47a47.js"><link rel="prefetch" href="/assets/js/29.15d1a220.js"><link rel="prefetch" href="/assets/js/3.782bc28f.js"><link rel="prefetch" href="/assets/js/30.3dcc0e12.js"><link rel="prefetch" href="/assets/js/31.eb50c983.js"><link rel="prefetch" href="/assets/js/32.365cff41.js"><link rel="prefetch" href="/assets/js/33.ce3c16c6.js"><link rel="prefetch" href="/assets/js/34.9607b347.js"><link rel="prefetch" href="/assets/js/35.eaa8153d.js"><link rel="prefetch" href="/assets/js/36.36cbec59.js"><link rel="prefetch" href="/assets/js/37.a4657b1e.js"><link rel="prefetch" href="/assets/js/38.0eb34d8d.js"><link rel="prefetch" href="/assets/js/39.04d9baae.js"><link rel="prefetch" href="/assets/js/4.0e4ab95b.js"><link rel="prefetch" href="/assets/js/40.a16d689a.js"><link rel="prefetch" href="/assets/js/5.637149b9.js"><link rel="prefetch" href="/assets/js/6.411d4b36.js"><link rel="prefetch" href="/assets/js/7.108d9a55.js"><link rel="prefetch" href="/assets/js/8.d54fd1d8.js"><link rel="prefetch" href="/assets/js/9.eab4c050.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa8566d2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">未金涛的地盘</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  home
+</a></div><div class="nav-item"><a href="/vuepress-note/" class="nav-link">
+  vuepress-note
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的" class="dropdown-title"><span class="title">我的</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的" class="mobile-dropdown-title"><span class="title">我的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_39753511?spm=1011.2124.3001.5113" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的个人博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <a href="https://github.com/weijintao92/weijintao92.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  home
+</a></div><div class="nav-item"><a href="/vuepress-note/" class="nav-link">
+  vuepress-note
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的" class="dropdown-title"><span class="title">我的</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的" class="mobile-dropdown-title"><span class="title">我的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_39753511?spm=1011.2124.3001.5113" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的个人博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <a href="https://github.com/weijintao92/weijintao92.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/my_plan/" class="sidebar-heading clickable"><span>PLAN</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/npm/" class="sidebar-link">Npm笔记</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/vuepress-note/" class="sidebar-heading clickable"><span>Vuepress笔记</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/vue" class="sidebar-heading clickable router-link-active open"><span>Vue笔记</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/vue/OtherNote/" class="sidebar-heading clickable router-link-active open"><span>Vue杂乱的个人笔记</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/OtherNote/ShowCode.html" class="sidebar-link">提取文件中的源码显示在Web前端页面</a></li><li><a href="/vue/OtherNote/Cors.html" class="sidebar-link">跨域请求的思考</a></li><li><a href="/vue/OtherNote/ErrorList.html" class="sidebar-link">前端错误汇总</a></li><li><a href="/vue/OtherNote/gitHubLogin.html" class="sidebar-link">gitHub第三方登录</a></li><li><a href="/vue/OtherNote/HttpCode.html" aria-current="page" class="active sidebar-link">Http状态码详解</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/OtherNote/overflow.html" class="sidebar-link">修改滚动条（overflow）样式</a></li><li><a href="/vue/OtherNote/Proxy.html" class="sidebar-link">vue设置代理（proxy）</a></li><li><a href="/vue/OtherNote/particle.html" class="sidebar-link">Vue粒子特效（vue-particles插件）</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/vue/Router" class="sidebar-heading clickable"><span>VueRouter</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/vue/OtherPlugin" class="sidebar-heading clickable"><span>第三方插件</span> <span class="arrow right"></span></a> <!----></section></li></ul></section></li><li><a href="/mpx/" class="sidebar-link">MPX</a></li><li><a href="/vue-element-admin/" class="sidebar-link">Vue-element-admin</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/nginx/" class="sidebar-heading clickable"><span>NGINX</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/MySql/" class="sidebar-link">MySql</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/Python/" class="sidebar-heading clickable"><span>Python</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="http状态码详解"><a href="#http状态码详解" class="header-anchor">#</a> Http状态码详解</h3> <h3 id="_1xx-信息提示"><a href="#_1xx-信息提示" class="header-anchor">#</a> 1xx - 信息提示</h3> <p>这些状态代码表示临时的响应。客户端在收到常规响应之前，应准备接收一个或多个 1xx 响应。
+100 - 继续
+101 - 切换协议</p> <h3 id="_2xx-成功"><a href="#_2xx-成功" class="header-anchor">#</a> 2xx - 成功</h3> <p>这类状态代码表明服务器成功地接受了客户端请求。
+200 - 确定。客户端请求已成功
+201 - 已创建
+202 - 已接受
+203 - 非权威性信息
+204 - 无内容
+205 - 重置内容
+206 - 部分内容</p> <h3 id="_3xx-重定向"><a href="#_3xx-重定向" class="header-anchor">#</a> 3xx - 重定向</h3> <p>客户端浏览器必须采取更多操作来实现请求。例如，浏览器可能不得不请求服务器上的不同的页面，或通过代理服务器重复该请求。
+302 - 对象已移动。
+304 - 未修改。
+307 - 临时重定向。</p> <h3 id="_4xx-客户端错误"><a href="#_4xx-客户端错误" class="header-anchor">#</a> 4xx - 客户端错误</h3> <p>发生错误，客户端似乎有问题。例如，客户端请求不存在的页面，客户端未提供有效的身份验证信息。
+400 - 错误的请求
+401 - 访问被拒绝
+· 401.1 - 登录失败。
+· 401.2 - 服务器配置导致登录失败。
+· 401.3 - 由于 ACL 对资源的限制而未获得授权。
+· 401.4 - 筛选器授权失败。
+· 401.5 - ISAPI/CGI 应用程序授权失败。
+· 401.7 – 访问被 Web 服务器上的 URL 授权策略拒绝。这个错误代码为 IIS 6.0 所专用。
+403 - 禁止访问
+· 403.1 - 执行访问被禁止。
+· 403.2 - 读访问被禁止。
+· 403.3 - 写访问被禁止。
+· 403.4 - 要求 SSL。
+· 403.5 - 要求 SSL 128。
+· 403.6 - IP 地址被拒绝。
+· 403.7 - 要求客户端证书。
+· 403.8 - 站点访问被拒绝。
+· 403.9 - 用户数过多。
+· 403.10 - 配置无效。
+· 403.11 - 密码更改。
+· 403.12 - 拒绝访问映射表。
+· 403.13 - 客户端证书被吊销。
+· 403.14 - 拒绝目录列表。
+· 403.15 - 超出客户端访问许可。
+· 403.16 - 客户端证书不受信任或无效。
+· 403.17 - 客户端证书已过期或尚未生效。
+· 403.18 - 在当前的应用程序池中不能执行所请求的 URL。这个错误代码为 IIS 6.0 所专用。
+· 403.19 - 不能为这个应用程序池中的客户端执行 CGI。这个错误代码为 IIS 6.0 所专用。
+· 403.20 - Passport 登录失败。这个错误代码为 IIS 6.0 所专用。
+404 - 没有找到文件或目录
+· 404.1 - 无法在所请求的端口上访问 Web 站点。
+· 404.2 - Web 服务扩展锁定策略阻止本请求。
+· 404.3 - MIME 映射策略阻止本请求。
+405 - 用来访问本页面的 HTTP 谓词不被允许（方法不被允许）
+406 - 客户端浏览器不接受所请求页面的 MIME 类型
+407 - 要求进行代理身份验证
+412 - 前提条件失败
+413 – 请求实体太大
+414 - 请求 URI 太长
+415 – 不支持的媒体类型
+416 – 所请求的范围无法满足
+417 – 执行失败
+423 – 锁定的错误</p> <h3 id="_5xx-服务器端错误"><a href="#_5xx-服务器端错误" class="header-anchor">#</a> 5xx - 服务器端错误</h3> <p>服务器由于遇到错误而不能完成该请求。
+500 - 内部服务器错误
+· 500.12 - 应用程序正忙于在 Web 服务器上重新启动。
+· 500.13 - Web 服务器太忙。
+· 500.15 - 不允许直接请求 Global.asa。
+· 500.16 – UNC 授权凭据不正确。这个错误代码为 IIS 6.0 所专用。
+· 500.18 – URL 授权存储不能打开。这个错误代码为 IIS 6.0 所专用。
+· 500.100 - 内部 ASP 错误。
+501 - 页眉值指定了未实现的配置
+502 - Web 服务器用作网关或代理服务器时收到了无效响应。502.1 - CGI 应用程序超时
+502.2 - CGI 应用程序出错。application
+503 - 服务不可用。这个错误代码为 IIS 6.0 所专用
+504 - 网关超时
+505 - HTTP 版本不受支持</p> <h3 id="http-304-错误介绍"><a href="#http-304-错误介绍" class="header-anchor">#</a> HTTP 304 错误介绍</h3> <p>表示请求的网页(文件)与上次对比没有更新。</p> <p>意思是蜘蛛来到你的网站，你网站没有更新内容，并且与上次一样，就会返回304代码。如果每次蜘蛛来你的网站都有新的内容出现，就会反回200代码。因为304代码是记录网站内容是否有更新，在24小时内没有更新，那么快照就会停止。同样，如果返回的304太多，表示网站没有更新，蜘蛛也就不会经常光顾， 影响收录。</p> <p>把蜘蛛来的时候给记录下来，算出蜘蛛每隔多久来一次网站，然后就分隔多久更新一下文章，更新文章时要原创+转载。让蜘蛛每次来都能够有新的内容，而不是无功而返。这样就会产生很多200代码。</p> <p>如果客户端在请求一个文件的时候，发现自己缓存的文件有 Last Modified ，那么在请求中会包含 If Modified Since ，这个时间就是缓存文件的 Last Modified 。因此，如果请求中包含 If Modified Since，就说明已经有缓存在客户端。只要判断这个时间和当前请求的文件的修改时间就可以确定是返回 304 还是 200 。对于静态文件，例如：CSS、图片，服务器会自动完成 Last Modified 和 If Modified Since 的比较，完成缓存或者更新。但是对于动态页面，就是动态产生的页面，往往没有包含 Last Modified 信息，这样浏览器、网关等都不会做缓存，也就是在每次请求的时候都完成一个 200 的请求。</p> <p>因此，对于动态页面做缓存加速，首先要在 Response 的 HTTP Header 中增加 Last Modified 定义，其次根据 Request 中的 If Modified Since 和被请求内容的更新时间来返回 200 或者 304 。虽然在返回 304 的时候已经做了一次数据库查询，但是可以避免接下来更多的数据库查询，并且没有返回页面内容而只是一个 HTTP Header，从而大大的降低带宽的消耗，对于用户的感觉也是提高。</p> <p>304不是错误。是请求一下图片，如果图片在上次访问后没有更新过，就不用下载了，返回304，叫浏览器直接用cache里的，这个很正常的。可以打开火狐firebug使用&quot;网络&quot;功能查看加载一个页面时所有请求文件的状态，再F5看一下，会看到很多是304，表示直接从浏览器缓存中读取的。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/weijintao92/vuepress-wjt/edit/main/docs/vue/OtherNote/HttpCode.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/11/2021, 5:39:39 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/OtherNote/gitHubLogin.html" class="prev">
+        gitHub第三方登录
+      </a></span> <span class="next"><a href="/vue/OtherNote/overflow.html">
+        修改滚动条（overflow）样式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.200df4c7.js" defer></script><script src="/assets/js/2.05e65b60.js" defer></script><script src="/assets/js/25.f3119831.js" defer></script>
+  </body>
+</html>
